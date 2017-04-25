@@ -19,27 +19,26 @@
   
 ![项目目录结构](http://upload-images.jianshu.io/upload_images/5307186-d29cb13923ae11db.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-- 控制器：controllers/user.js
+- 控制器：controllers/user.js  
   用于接收用户模块的接口请求，如注册、更新、删除、获取用于列表、搜索用户等相关请求，以下是注册请求的举例。主要是通过koa-router实现路由转发请求到该接口，然后使用封装的dbHelper对mongodb进行操作（当然这里我直接使用了mongose的api进行数据库的操作了，比较low）。
 
     ![用户注册接口的实现](http://upload-images.jianshu.io/upload_images/5307186-bd283eeebc2a704d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-- model层：表结构的定义，model/user.js
+- model层：表结构的定义，model/user.js  
   mongoose的语法，先定义一个schema，再导出一个model。mongoose的文档可以参考：http://www.nodeclass.com/api/mongoose.html 。
   
 ![用户表结构](http://upload-images.jianshu.io/upload_images/5307186-a2f18ca07c580904.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-- koa2的使用
+- koa2的使用  
   还是贴一下文档吧：https://github.com/koajs/koa
 
-- koa-router的使用
+- koa-router的使用  
   再贴文档：https://github.com/alexmingoia/koa-router 
 
-# 使用RAP
+# 使用RAP  
   使用淘宝的rap来记录设计项目的API接口：http://rapapi.org/org/index.do
   
   ![更新用户信息接口的设计](http://upload-images.jianshu.io/upload_images/5307186-a628a6d42d64f4bf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
 
 
 
